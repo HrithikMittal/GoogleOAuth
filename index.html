@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-signin-client_id" content="534572530356-1ktq8vjmkr7ue15eeuhl3o0rama6so6c.apps.googleusercontent.com">
     <title>Login</title>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=599995680464989&autoLogAppEvents=1"></script>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
@@ -16,7 +17,13 @@
     <div class="g-signin2" data-onsuccess="onSignIn">Sign In</div>
 
 
-    <a href="#" onclick="signOut();">Sign out</a>
+    <a class="g-signin2" href="#" onclick="signOut();">Sign out</a>
+
+    <div class="fb-login-button" data-size="large" data-button-type="continue_with" data-auto-logout-link="false"
+        data-use-continue-as="false"></div>
+
+    <div id="fb-root"></div>
+
     <script>
         function onSignIn(googleUser) {
             var profile = googleUser.getBasicProfile();
