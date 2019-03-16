@@ -10,23 +10,52 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=599995680464989&autoLogAppEvents=1"></script>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+
+
 </head>
 
 <body>
 
-    <div class="g-signin2" data-onsuccess="onSignIn">Sign In</div>
 
 
-    <a class="" href="html/main.html">Sign out</a>
-
-    <div class=" fb-login-button" data-size="large" data-button-type="continue_with" data-auto-logout-link="false"
-        data-use-continue-as="false"></div>
-
-    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button> -->
 
 
-    <div id="fb-root"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="margin:10px 250px">
+                <div class="g-signin2" style="width:250px;" data-onsuccess="onSignIn">Sign In</div>
+            </div>
+
+
+            <div class="col-md-12" style="margin:10px 250px">
+                <div class=" fb-login-button" style="width:300px;" data-size="large" data-button-type="continue_with"
+                    data-auto-logout-link="false" data-use-continue-as="false"></div>
+            </div>
+            <br>
+
+            <div class="alert alert-dark" role="alert" style="margin:0px 256px;padding:0px 100px;">
+                <a href="html/main.html">Sign out</a>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
 
     <script>
         function onSignIn(googleUser) {
@@ -76,9 +105,9 @@
             }
             js = d.createElement(s);
             js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+            js.src = "
+            https: //connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document,
+                'script', 'facebook-jssdk'));
     </script>
 </body>
 
